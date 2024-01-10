@@ -1,0 +1,12 @@
+version: "3"
+
+
+services:
+ 
+  backend: 
+    build: ./
+    image: udch-api
+    container_name: udch-api-con
+    restart: always
+    ports:
+      - 4000:3000 
