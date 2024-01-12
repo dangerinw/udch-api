@@ -11,12 +11,13 @@ const hisRoutes = [
 ];
 
 const erpRoutes = [
-    {
-      method: "get",
-      route: "/erp/getSomething",
-      controller: ErpController,
-      action: "getSomething",
-    },
-  ];
+  {
+    method: "get",
+    route: "/erp/getSomething/:projectId",
+    controller: ErpController,
+    action: "getSomething",
+  },
+];
+
 
 export const Routes = [...hisRoutes,...erpRoutes];
